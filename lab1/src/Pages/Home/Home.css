@@ -1,0 +1,30 @@
+.special-ribbon{
+    position: relative;
+}
+.ribbon {
+  width: 60px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: -25px;
+  top: -12px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background-color: crimson;
+  color: white;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.home-page{
+    font-family: 'Bell MT', sans-serif;
+    font-size: 20px;
+}
+
+.flower-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
