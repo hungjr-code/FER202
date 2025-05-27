@@ -6,6 +6,17 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import orchid from "../../ListofOrchids";
 
+function renderStars(rating) {
+  const stars = [];
+  for (let i = 1; i <= 5; i++) {
+    stars.push(
+      <span key={i} style={{ color: i <= rating ? "#ffc107" : "#e4e5e9", fontSize: "1.1em" }}>
+        ★
+      </span>
+    );
+  }
+  return stars;
+}
 
 function Home() {
     return (
@@ -17,6 +28,7 @@ function Home() {
                             <Card.Img variant="top" src={item.image} style={{ height: "180px", objectFit: "cover" }} />
                             <Card.Body>
                                 <Card.Title>{item.name}</Card.Title>
+                                <div>{renderStars(item.rating)}</div>
                                 <Card.Text>
                                     Origin: {item.origin}<br />
                                     Category: {item.category}

@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './Footer.css'; // Assuming you have a Footer.css for styling
 
 function Footer() {
   return (
@@ -20,9 +21,15 @@ function Footer() {
           </Col>
           <Col md={4}>
             <h5>Social Network</h5>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a><br />
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a><br />
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/500px-Facebook_logo_%28square%29.png" alt="Facebook" style={{marginRight: 8}} />
+            </a><br />
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" style={{marginRight: 8}} />
+            </a><br />
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?semt=ais_hybrid&w=740" alt="Twitter" style={{marginRight: 8}} />
+            </a>
           </Col>
         </Row>
       </Container>
