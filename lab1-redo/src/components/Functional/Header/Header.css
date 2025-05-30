@@ -1,0 +1,9 @@
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #6f42c1;
+  text-align: center;
+  margin: 32px 0 24px 0;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(111,66,193,0.08);
+}
